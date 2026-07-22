@@ -7,7 +7,7 @@ import "./styles/global.css";
 const App = () => {
   return (
     <StoreProvider>
-      <div className="app">
+      <div className="app">A
         <Header />
         <CartDrawer />
       </div>
