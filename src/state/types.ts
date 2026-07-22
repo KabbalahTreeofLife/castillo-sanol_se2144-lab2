@@ -5,22 +5,22 @@ export interface Product {
   price: number;
   image: string;
   inStock: boolean;
-};
+}
 
-export interface CartItem extends Product{
+export interface CartItem extends Product {
   quantity: number;
-};
+}
 
 export interface Filters {
   searchQuery: string;
   category: string;
   maxPrice: number;
-  sortBy: 'default' | 'price-asc' | 'price-desc';
-};
+  sortBy: "default" | "price-asc" | "price-desc";
+}
 
 export interface State {
   products: Product[];
   cart: CartItem[];
-  filters; Filters;
+  filters: Filters;
   isCartOpen: boolean;
-};
+}
