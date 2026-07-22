@@ -1,0 +1,98 @@
+[
+  {
+    "id": "p001",
+    "name": "Mechanical Keyboard - Brown Switch",
+    "category": "Keyboards",
+    "price": 2499,
+    "image": "https://placehold.co/300x300?text=Keyboard",
+    "inStock": true
+  },
+  {
+    "id": "p002",
+    "name": "Wireless Ergonomic Mouse",
+    "category": "Mice",
+    "price": 899,
+    "image": "https://placehold.co/300x300?text=Mouse",
+    "inStock": true
+  },
+  {
+    "id": "p003",
+    "name": "27-inch 144Hz Gaming Monitor",
+    "category": "Monitors",
+    "price": 12999,
+    "image": "https://placehold.co/300x300?text=Monitor",
+    "inStock": true
+  },
+  {
+    "id": "p004",
+    "name": "USB-C Hub 7-in-1",
+    "category": "Accessories",
+    "price": 1299,
+    "image": "https://placehold.co/300x300?text=USB-C+Hub",
+    "inStock": true
+  },
+  {
+    "id": "p005",
+    "name": "Noise-Cancelling Headphones",
+    "category": "Audio",
+    "price": 4599,
+    "image": "https://placehold.co/300x300?text=Headphones",
+    "inStock": false
+  },
+  {
+    "id": "p006",
+    "name": "RGB Mouse Pad - Large",
+    "category": "Accessories",
+    "price": 599,
+    "image": "https://placehold.co/300x300?text=Mouse+Pad",
+    "inStock": true
+  },
+  {
+    "id": "p007",
+    "name": "1080p Webcam with Ring Light",
+    "category": "Cameras",
+    "price": 1899,
+    "image": "https://placehold.co/300x300?text=Webcam",
+    "inStock": true
+  },
+  {
+    "id": "p008",
+    "name": "Portable SSD 1TB",
+    "category": "Storage",
+    "price": 3299,
+    "image": "https://placehold.co/300x300?text=SSD",
+    "inStock": true
+  },
+  {
+    "id": "p009",
+    "name": "Laptop Stand - Aluminum",
+    "category": "Accessories",
+    "price": 999,
+    "image": "https://placehold.co/300x300?text=Laptop+Stand",
+    "inStock": true
+  },
+  {
+    "id": "p010",
+    "name": "Mechanical Keyboard - Compact 60%",
+    "category": "Keyboards",
+    "price": 1999,
+    "image": "https://placehold.co/300x300?text=60%25+Keyboard",
+    "inStock": false
+  },
+  {
+    "id": "p011",
+    "name": "Bluetooth Speaker - Waterproof",
+    "category": "Audio",
+    "price": 1599,
+    "image": "https://placehold.co/300x300?text=Speaker",
+    "inStock": true
+  },
+  {
+    "id": "p012",
+    "name": "Desk Cable Management Kit",
+    "category": "Accessories",
+    "price": 349,
+    "image": "https://placehold.co/300x300?text=Cable+Kit",
+    "inStock": true
+  }
+]
