@@ -4,13 +4,12 @@ import appStateReducer from "./reducer";
 import products from "../data/products.json";
 import { Action } from "./actions";
 
-const productsList = products as Product[];
-
 interface StoreContextValue {
   state: State;
   dispatch: React.Dispatch<Action>;
 }
 
+const productsList = products as Product[];
 const StoreContext = createContext<StoreContextValue | undefined>(undefined);
 const initialState: State = {
   products: productsList,
