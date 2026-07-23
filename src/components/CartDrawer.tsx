@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useStore } from "../state/storeContext";
 import { ActionType } from "../state/actions";
 import CheckoutModal from "./CheckoutModal";
+import CartItem from "./CartItem";
 
 const CartDrawer = () => {
   const { state, dispatch } = useStore();
@@ -41,47 +42,7 @@ const CartDrawer = () => {
         <div className="cart-drawer__items">
           {state.cart.length === 0 && <p>Your cart is empty.</p>}
           {state.cart.map((item) => (
-            <div key={item.id} className="cart-item">
-              <div className="cart-item__info">
-                <span className="cart-item__name">{item.name}</span>
-                <span className="cart-item__price">
-                  ${(item.price * item.quantity).toFixed(2)}
-                </span>
-              </div>
-              <div className="cart-item__controls">
-                <button
-                  onClick={() =>
-                    dispatch({
-                      type: ActionType.UPDATE_QUANTITY,
-                      payload: { id: item.id, quantity: item.quantity - 1 },
-                    })
-                  }
-                >
-                  -
-                </button>
-                <span>{item.quantity}</span>
-                <button
-                  onClick={() =>
-                    dispatch({
-                      type: ActionType.UPDATE_QUANTITY,
-                      payload: { id: item.id, quantity: item.quantity + 1 },
-                    })
-                  }
-                >
-                  +
-                </button>
-                <button
-                  onClick={() =>
-                    dispatch({
-                      type: ActionType.REMOVE_FROM_CART,
-                      payload: item.id,
-                    })
-                  }
-                >
-                  Remove
-                </button>
-              </div>
-            </div>
+            <CartItem key={item.id} item={item} />
           ))}
         </div>
 

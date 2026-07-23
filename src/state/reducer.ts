@@ -48,11 +48,13 @@ const appStateReducer = (state: State, action: Action): State => {
       return {
         ...state,
         filters: { ...state.filters, searchQuery: action.payload },
+        isBrowsing: true,
       };
     case ActionType.SET_CATEGORY:
       return {
         ...state,
         filters: { ...state.filters, category: action.payload },
+        isBrowsing: true,
       };
     case ActionType.SET_SORT:
       return {
@@ -61,11 +63,18 @@ const appStateReducer = (state: State, action: Action): State => {
           ...state.filters,
           sortBy: action.payload as "default" | "price-asc" | "price-desc",
         },
+        isBrowsing: true,
       };
     case ActionType.SET_MAX_PRICE:
       return {
         ...state,
         filters: { ...state.filters, maxPrice: action.payload },
+        isBrowsing: true,
+      };
+    case ActionType.SET_BROWSING:
+      return {
+        ...state,
+        isBrowsing: action.payload,
       };
     case ActionType.TOGGLE_CART:
       return {

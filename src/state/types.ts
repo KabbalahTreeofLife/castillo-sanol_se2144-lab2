@@ -23,4 +23,5 @@ export interface State {
   cart: CartItem[];
   filters: Filters;
   isCartOpen: boolean;
+  isBrowsing: boolean;
 }

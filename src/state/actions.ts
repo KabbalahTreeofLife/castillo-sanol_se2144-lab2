@@ -9,6 +9,7 @@ export enum ActionType {
   SET_CATEGORY = "SET_CATEGORY",
   SET_SORT = "SET_SORT",
   SET_MAX_PRICE = "SET_MAX_PRICE",
+  SET_BROWSING = "SET_BROWSING",
   TOGGLE_CART = "TOGGLE_CART",
 }
 
@@ -43,6 +44,10 @@ export type Action =
   | {
       type: ActionType.SET_MAX_PRICE;
       payload: number;
+    }
+  | {
+      type: ActionType.SET_BROWSING;
+      payload: boolean;
     }
   | {
       type: ActionType.TOGGLE_CART;

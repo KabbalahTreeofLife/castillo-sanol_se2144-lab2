@@ -21,6 +21,7 @@ const initialState: State = {
     sortBy: "default",
   },
   isCartOpen: false,
+  isBrowsing: false,
 };
 const StoreProvider = ({ children }: { children: ReactNode }) => {
   const [state, dispatch] = useReducer(appStateReducer, initialState);
