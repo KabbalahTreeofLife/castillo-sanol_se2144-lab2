@@ -1,6 +1,7 @@
 import React from "react";
 import { useStore } from "../state/storeContext";
 import { ActionType } from "../state/actions";
+import cartIcon from "../assets/shopping-cart.svg";
 
 const CartIcon = () => {
   const { state, dispatch } = useStore();
@@ -12,7 +13,7 @@ const CartIcon = () => {
       className="cart-icon"
       onClick={() => dispatch({ type: ActionType.TOGGLE_CART, payload: true })}
     >
-      Cart
+      <img src={cartIcon} alt="Cart" className="cart-icon__img"></img>
       {totalCount > 0 && <span className="cart-icon__badge">{totalCount}</span>}
     </button>
   );

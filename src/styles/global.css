@@ -27,12 +27,17 @@
 .cart-icon {
   position: relative;
   background: none;
-  border: 2px solid #fff;
+  border: none;
   color: #fff;
   padding: 0.5rem 1rem;
-  border-radius: 6px;
   cursor: pointer;
   font-size: 1rem;
+}
+
+.cart-icon__img {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 .cart-icon__badge {
