@@ -72,14 +72,6 @@
     "inStock": true
   },
   {
-    "id": "p010",
-    "name": "Mechanical Keyboard - Compact 60%",
-    "category": "Keyboards",
-    "price": 1999,
-    "image": "https://placehold.co/300x300?text=60%25+Keyboard",
-    "inStock": false
-  },
-  {
     "id": "p011",
     "name": "Bluetooth Speaker - Waterproof",
     "category": "Audio",
@@ -93,6 +85,14 @@
     "category": "Accessories",
     "price": 349,
     "image": "https://placehold.co/300x300?text=Cable+Kit",
+    "inStock": true
+  },
+  {
+    "id": "p013",
+    "name": "LED Desk Lamp with USB Port",
+    "category": "Lighting",
+    "price": 799,
+    "image": "https://placehold.co/300x300?text=Desk+Lamp",
     "inStock": true
   }
 ]
