@@ -62,6 +62,11 @@ const appStateReducer = (state: State, action: Action): State => {
           sortBy: action.payload as "default" | "price-asc" | "price-desc",
         },
       };
+    case ActionType.SET_MAX_PRICE:
+      return {
+        ...state,
+        filters: { ...state.filters, maxPrice: action.payload },
+      };
     case ActionType.TOGGLE_CART:
       return {
         ...state,
