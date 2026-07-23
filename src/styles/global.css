@@ -10,6 +10,8 @@
   padding: 1rem 2rem;
   background-color: #1a1a2e;
   color: #fff;
+  position: sticky;
+  top: 0;
 }
 
 .header__title {
@@ -220,4 +222,49 @@
   border-radius: 6px;
   cursor: pointer;
   font-size: 1rem;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  align-items: flex-end;
+}
+
+.filter-bar__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 160px;
+}
+
+.filter-bar__label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.filter-bar__input,
+.filter-bar__select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background-color: #fff;
+  color: #333;
+}
+
+.filter-bar__input:focus,
+.filter-bar__select:focus {
+  outline: none;
+  border-color: #e94560;
+}
+
+.filter-bar__range {
+  width: 100%;
+  accent-color: #e94560;
 }
